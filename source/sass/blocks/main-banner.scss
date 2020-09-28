@@ -1,0 +1,53 @@
+.main-banner {
+  color: $light;
+  margin-left: 8.05%;
+}
+
+.main-banner h1 {
+  margin: 0;
+  margin-bottom: 11px;
+  font-weight: 700;
+  font-size: 54px;
+  line-height: 66px;
+}
+
+.main-banner p {
+  margin: 0;
+  margin-bottom: 30px;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+@media (max-width: $tablet-width) {
+  .main-banner {
+    margin-left: 0;
+  }
+
+  .main-banner h1 {
+    font-size: 50px;
+    line-height: 61px;
+  }
+
+  .main-banner p {
+    font-size: 18px;
+    line-height: 22px;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .main-banner {
+    padding-top: 127px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .main-banner h1 {
+    font-size: 36px;
+    line-height: 45px;
+  }
+
+  .main-banner p {
+    width: 70%;
+    font-size: 16px;
+  }
+}

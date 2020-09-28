@@ -1,0 +1,316 @@
+.form {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background: url("../img/bg-booking-desktop@1x.jpg") no-repeat center center;
+  background-size: cover;
+  background-color: #c3d6e8;
+  min-height: 555px;
+}
+
+@media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+  .form {
+    background-image: url("../img/bg-booking-desktop@2x.jpg");
+    background-size: cover;
+  }
+}
+
+.form__container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.form__info {
+  width: 42.48%;
+  margin-top: 163px;
+  margin-bottom: 30px;
+  margin-left: 5.17%;
+  margin-right: 12.41%;
+}
+
+.form h2 {
+  margin: 0;
+  padding-bottom: 8px;
+  font-size: 40px;
+  line-height: 60px;
+}
+
+.form p {
+  margin: 0;
+  width: 71.54%;
+  font-size: 18px;
+  line-height: 27px;
+}
+
+.form__wrapper {
+  width: 34.74%;
+  min-height: 455px;
+  padding: 50px;
+  padding-top: 44px;
+  background-color: $dark-blue;
+}
+
+.form__wrapper p {
+  width: 100%;
+  font-weight: 500;
+  color: $light;
+  padding-bottom: 29px;
+}
+
+.form__wrapper input {
+  width: 100%;
+  padding-top: 9px;
+  padding-right: 12px;
+  padding-bottom: 9px;
+  padding-left: 14px;
+  margin-bottom: 20px;
+  border-radius: 0;
+}
+
+.form__wrapper input[type="email"] {
+  margin-bottom: 24px;
+}
+
+.form__wrapper input[placeholder] {
+  border: 2px solid $light;
+  background-color: $light;
+  font-size: 14px;
+  line-height: 21px;
+  font-family: "Montserrat", "Arial", sans-serif;
+
+  &:hover {
+    border: 2px solid rgba($dark-blue, 0.8);
+  }
+
+  &:focus,
+  &:active {
+    border: 2px solid rgba($dark-blue, 0.5);
+  }
+}
+
+.form ::-webkit-input-placeholder {
+  color: $dark-blue;
+}
+
+.form :-ms-input-placeholder {
+  color: $dark-blue;
+}
+
+.form ::-moz-placeholder {
+  color: $dark-blue;
+}
+
+.form__wrapper label:not(.visually-hidden) {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  padding-left: 23px;
+  margin-bottom: 31px;
+  font-size: 10px;
+  line-height: 13px;
+  color: $light;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.form__wrapper input[type="checkbox"] {
+  display: inline-block;
+  vertical-align: middle;
+  width: 20px;
+}
+
+input[type="checkbox"]:hover + label::before,
+input[type="checkbox"]:focus + label::before {
+  border: 2px solid rgba($dark-blue, 0.8);
+}
+
+input[type="checkbox"] + label::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: -3px;
+  width: 18px;
+  height: 18px;
+  background-color: $light;
+}
+
+input[type="checkbox"]:enabled:checked + label::after {
+  content: "";
+  position: absolute;
+  left: 4px;
+  top: 2px;
+  width: 12px;
+  height: 8px;
+
+  background: url("../img/check.svg") no-repeat center center;
+  background-size: 12px 8px;
+}
+
+.form__wrapper button {
+  @include button;
+  padding-top: 11px;
+  padding-bottom: 11px;
+
+  &:hover {
+    color: rgba($dark-blue, 0.8%);
+    cursor: pointer;
+  }
+
+  &:focus {
+    color: rgba($dark-blue, 0.8%);
+  }
+
+  &:active {
+    color: rgba($dark-blue, 0.5%);
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .form {
+    background: url("../img/bg-booking-tablet@1x.jpg") no-repeat center center;
+    background-size: cover;
+    min-height: 805px;
+  }
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    .form {
+      background-image: url("../img/bg-booking-tablet@2x.jpg");
+      background-size: cover;
+    }
+  }
+
+  .form__container {
+    flex-direction: column;
+  }
+
+  .form__info {
+    width: 62%;
+    margin-top: 37px;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .form h2 {
+    padding-bottom: 5px;
+    font-size: 34px;
+    line-height: 51px;
+  }
+
+  .form p {
+    margin: 0 auto;
+    padding-bottom: 23px;
+    width: 84.01%;
+    text-align: center;
+  }
+
+  .form__wrapper {
+    width: 59.54%;
+    margin: 0 auto;
+    padding-right: 47px;
+  }
+
+  .form__wrapper input {
+    width: 99%;
+    min-height: 43px;
+  }
+
+  .form__wrapper input[type="email"] {
+    margin-bottom: 23px;
+  }
+
+  .form__wrapper p {
+    width: 100%;
+    text-align: left;
+    padding-bottom: 28px;
+  }
+
+  .form__wrapper button {
+    width: 99%;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .form {
+    background: url("../img/bg-booking-mobile@1x.jpg") no-repeat center center;
+    min-height: 760px;
+    background-size: cover;
+  }
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    .form {
+      background-image: url("../img/bg-booking-mobile@2x.jpg");
+      background-size: cover;
+    }
+  }
+
+  .form__container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .form__info {
+    width: 100%;
+    margin-top: 9px;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .form h2 {
+    padding-bottom: 14px;
+    font-size: 24px;
+    line-height: 31px;
+    text-align: center;
+  }
+
+  .form p {
+    padding-bottom: 3px;
+    width: 88.62%;
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  .form__wrapper {
+    width: 100%;
+    min-height: 461px;
+    padding-top: 36px;
+    padding-right: 29px;
+    padding-bottom: 41px;
+    padding-left: 29px;
+  }
+
+  .form__wrapper p {
+    width: 100%;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+    padding-bottom: 28px;
+  }
+
+  .form__wrapper input {
+    padding-top: 10px;
+    margin-bottom: 18px;
+  }
+
+  .form__wrapper input[type="email"] {
+    margin-bottom: 20px;
+  }
+
+  .form__wrapper label:not(.visually-hidden) {
+    width: 80%;
+    padding-left: 29px;
+    margin-bottom: 25px;
+  }
+
+  input[type="checkbox"] + label::before {
+    left: 2px;
+    top: 2px;
+  }
+
+  input[type="checkbox"]:enabled:checked + label::after {
+    left: 5px;
+    top: 7px;
+  }
+}

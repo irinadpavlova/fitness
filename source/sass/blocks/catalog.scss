@@ -1,0 +1,500 @@
+.catalog {
+  padding-top: 109px;
+  padding-right: 25px;
+  padding-bottom: 90px;
+  padding-left: 25px;
+  color: $light;
+}
+
+.catalog__list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+
+  @include list-reset;
+}
+
+.catalog__hover {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-grow: 1;
+  opacity: 0;
+}
+
+.catalog__item {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 23%;
+  min-height: 386px;
+  margin-right: 2.65%;
+  margin-bottom: 30px;
+  padding-top: 29px;
+  padding-right: 25px;
+  padding-bottom: 6px;
+  padding-left: 30px;
+
+  &:nth-of-type(4n) {
+    margin-right: 0;
+  }
+
+  &:hover,
+  &:focus {
+    padding-bottom: 35px;
+    padding-left: 25px;
+    background: $dark-blue;
+
+    .catalog__hover {
+      opacity: 1;
+    }
+
+    h3 {
+      order: -1;
+    }
+  }
+}
+
+.catalog__item--astoria,
+.catalog__item--elain {
+  background: url("../img/astoria-desktop@1x.jpg") no-repeat center center;
+  background-color: #c3d6e8;
+  background-size: cover;
+}
+
+@media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+  .catalog__item--astoria,
+  .catalog__item--elain {
+    background-image: url("../img/astoria-desktop@2x.jpg");
+    background-size: cover;
+  }
+}
+
+.catalog__item--atlantis {
+  background: url("../img/atlantis-desktop@1x.jpg") no-repeat center center;
+  background-color: #c3d6e8;
+  background-size: cover;
+}
+
+@media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+  .catalog__item--atlantis {
+    background-image: url("../img/atlantis-desktop@2x.jpg");
+    background-size: cover;
+  }
+}
+
+.catalog__item--odysseus {
+  background: url("../img/odysseus-desktop@1x.jpg") no-repeat center center;
+  background-color: #c3d6e8;
+  background-size: cover;
+}
+
+@media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+  .catalog__item--odysseus {
+    background-image: url("../img/odysseus-desktop@2x.jpg");
+    background-color: #c3d6e8;
+    background-size: cover;
+  }
+}
+
+.catalog__item--olympia {
+  background: url("../img/olympia-desktop@1x.jpg") no-repeat center center;
+  background-color: #c3d6e8;
+  background-size: cover;
+}
+
+@media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+  .catalog__item--olympia {
+    background-image: url("../img/olympia-desktop@2x.jpg");
+    background-size: cover;
+  }
+}
+
+.catalog__item--aurora {
+  background: url("../img/aurora-desktop@1x.jpg") no-repeat center center;
+  background-color: #c3d6e8;
+  background-size: cover;
+}
+
+@media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+  .catalog__item--aurora {
+    background-image: url("../img/aurora-desktop@2x.jpg");
+    background-size: cover;
+  }
+}
+
+.catalog__item--leonor {
+  background: url("../img/leonor-desktop@1x.jpg") no-repeat center center;
+  background-color: #c3d6e8;
+  background-size: cover;
+}
+
+@media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+  .catalog__item--leonor {
+    background-image: url("../img/leonor-desktop@2x.jpg");
+    background-size: cover;
+  }
+}
+
+.catalog__item--minion {
+  background: url("../img/minion-desktop@1x.jpg") no-repeat center center;
+  background-color: #c3d6e8;
+  background-size: cover;
+}
+
+@media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+  .catalog__item--minion {
+    background-image: url("../img/minion-desktop@2x.jpg");
+    background-size: cover;
+  }
+}
+
+.catalog h2 {
+  margin: 0;
+  margin-bottom: 48px;
+
+  @include title-desktop;
+  text-align: center;
+}
+
+.catalog h3 {
+  order: 2;
+  margin: 0;
+  margin-bottom: 13px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+}
+
+.catalog__item--olympia h3 {
+  margin-bottom: 10px;
+}
+
+.catalog h4 {
+  margin: 0;
+  margin-bottom: 1px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.catalog p {
+  margin: 0;
+  margin-bottom: 10px;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.catalog__hover a {
+  @include button;
+
+  &:hover,
+  &:focus {
+    color: rgba($dark-blue, 0.8%);
+  }
+
+  &:active {
+    color: rgba($dark-blue, 0.5%);
+  }
+}
+
+@media (max-width: 1360px) {
+  .catalog {
+    width: 90%;
+  }
+
+  .catalog__item {
+    padding-top: 10px;
+    padding-right: 15px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+  }
+
+  .catalog__item:focus,
+  .catalog__item:hover {
+    padding-top: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+    padding-left: 15px;
+  }
+
+  .catalog h3 {
+    font-size: 17px;
+    line-height: 24px;
+  }
+}
+
+@media (max-width: 1038px) {
+  .catalog h3 {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .catalog {
+    width: 91%;
+    padding-top: 90px;
+    padding-bottom: 72px;
+  }
+
+  .catalog__item {
+    width: 47.69%;
+    margin-right: 4.61%;
+    margin-bottom: 30px;
+    padding-top: 29px;
+    padding-right: 35px;
+    padding-bottom: 12px;
+    padding-left: 35px;
+
+    &:nth-of-type(2n) {
+      margin-right: 0;
+    }
+
+    &:hover,
+    &:focus {
+      padding-top: 30px;
+      padding-right: 35px;
+      padding-bottom: 35px;
+      padding-left: 35px;
+    }
+  }
+
+  .catalog__item--astoria,
+  .catalog__item--elain {
+    background: url("../img/astoria-tablet@1x.jpg") no-repeat center center;
+    background-color: #c3d6e8;
+    background-size: cover;
+  }
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    .catalog__item--astoria,
+    .catalog__item--elain {
+      background-image: url("../img/astoria-tablet@2x.jpg");
+      background-size: cover;
+    }
+  }
+
+  .catalog__item--atlantis {
+    background: url("../img/atlantis-tablet@1x.jpg") no-repeat center center;
+    background-color: #c3d6e8;
+    background-size: cover;
+  }
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    .catalog__item--atlantis {
+      background-image: url("../img/atlantis-tablet@2x.jpg");
+      background-size: cover;
+    }
+  }
+
+  .catalog__item--odysseus {
+    background: url("../img/odysseus-tablet@1x.jpg") no-repeat center center;
+    background-color: #c3d6e8;
+    background-size: cover;
+  }
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    .catalog__item--odysseus {
+      background-image: url("../img/odysseus-tablet@2x.jpg");
+      background-size: cover;
+    }
+  }
+
+  .catalog__item--olympia {
+    background: url("../img/olympia-tablet@1x.jpg") no-repeat center center;
+    background-color: #c3d6e8;
+    background-size: cover;
+  }
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    .catalog__item--olympia {
+      background-image: url("../img/olympia-tablet@2x.jpg");
+      background-size: cover;
+    }
+  }
+
+  .catalog__item--aurora {
+    background: url("../img/aurora-tablet@1x.jpg") no-repeat center center;
+    background-color: #c3d6e8;
+    background-size: cover;
+  }
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    .catalog__item--aurora {
+      background-image: url("../img/aurora-tablet@2x.jpg");
+      background-size: cover;
+    }
+  }
+
+  .catalog__item--leonor {
+    background: url("../img/leonor-tablet@1x.jpg") no-repeat center center;
+    background-color: #c3d6e8;
+    background-size: cover;
+  }
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    .catalog__item--leonor {
+      background-image: url("../img/leonor-tablet@2x.jpg");
+      background-size: cover;
+    }
+  }
+
+  .catalog__item--minion {
+    background: url("../img/minion-tablet@1x.jpg") no-repeat center center;
+    background-color: #c3d6e8;
+    background-size: cover;
+  }
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    .catalog__item--minion {
+      background-image: url("../img/minion-tablet@2x.jpg");
+      background-size: cover;
+    }
+  }
+
+  .catalog h3 {
+    font-size: 18px;
+    line-height: 27px;
+  }
+
+  .catalog h2 {
+    margin-bottom: 51px;
+
+    @include title-tablet;
+  }
+
+  .catalog__item--atlantis h3,
+  .catalog__item--olympia h3,
+  .catalog__item--astoria h3 {
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .catalog {
+    width: 100%;
+    padding-top: 57px;
+    padding-bottom: 35px;
+  }
+
+  .catalog__item {
+    width: 100%;
+    margin-right: 0;
+    padding-top: 29px;
+    padding-right: 25px;
+    padding-bottom: 3px;
+    padding-left: 25px;
+    background-color: $dark-blue;
+
+    &:hover,
+    &:focus {
+      padding-right: 26px;
+      padding-bottom: 35px;
+      padding-left: 26px;
+    }
+  }
+
+  .catalog h2 {
+    margin-bottom: 31px;
+
+    @include title-mobile;
+  }
+}
+
+@media (max-width: 350px) {
+  .catalog__item--astoria,
+  .catalog__item--elain {
+    background: url("../img/astoria-mobile@1x.jpg") no-repeat center center;
+    background-color: #c3d6e8;
+    background-size: cover;
+  }
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    .catalog__item--astoria,
+    .catalog__item--elain {
+      background-image: url("../img/astoria-mobile@2x.jpg");
+      background-size: cover;
+    }
+  }
+
+  .catalog__item--atlantis {
+    background: url("../img/atlantis-mobile@1x.jpg") no-repeat center center;
+    background-color: #c3d6e8;
+    background-size: cover;
+  }
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    .catalog__item--atlantis {
+      background-image: url("../img/atlantis-mobile@2x.jpg");
+      background-size: cover;
+    }
+  }
+
+  .catalog__item--odysseus {
+    background: url("../img/odysseus-mobile@1x.jpg") no-repeat center center;
+    background-color: #c3d6e8;
+    background-size: cover;
+  }
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    .catalog__item--odysseus {
+      background-image: url("../img/odysseus-mobile@2x.jpg");
+      background-size: cover;
+    }
+  }
+
+  .catalog__item--olympia {
+    background: url("../img/olympia-mobile@1x.jpg") no-repeat center center;
+    background-color: #c3d6e8;
+    background-size: cover;
+  }
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    .catalog__item--olympia {
+      background-image: url("../img/olympia-mobile@2x.jpg");
+      background-size: cover;
+    }
+  }
+
+  .catalog__item--aurora {
+    background: url("../img/aurora-mobile@1x.jpg") no-repeat center center;
+    background-color: #c3d6e8;
+    background-size: cover;
+  }
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    .catalog__item--aurora {
+      background-image: url("../img/aurora-mobile@2x.jpg");
+      background-size: cover;
+    }
+  }
+
+  .catalog__item--leonor {
+    background: url("../img/leonor-mobile@1x.jpg") no-repeat center center;
+    background-color: #c3d6e8;
+    background-size: cover;
+  }
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    .catalog__item--leonor {
+      background-image: url("../img/leonor-mobile@2x.jpg");
+      background-size: cover;
+    }
+  }
+
+  .catalog__item--minion {
+    background: url("../img/minion-mobile@1x.jpg") no-repeat center center;
+    background-color: #c3d6e8;
+    background-size: cover;
+  }
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    .catalog__item--minion {
+      background-image: url("../img/minion-mobile@2x.jpg");
+      background-size: cover;
+    }
+  }
+}

@@ -1,0 +1,51 @@
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  background: url("../img/bg-desktop@1x.jpg") no-repeat bottom center;
+  background-size: cover;
+  background-color: $dark-blue;
+  min-height: 650px;
+}
+
+@media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+  .page-header {
+    background-image: url("../img/bg-desktop@2x.jpg");
+    background-size: cover;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .page-header {
+    background: url("../img/bg-tablet@1x.jpg") no-repeat bottom center;
+    background-size: cover;
+    min-height: 638px;
+  }
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    .page-header {
+      background-image: url("../img/bg-tablet@2x.jpg");
+      background-size: cover;
+    }
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .page-header {
+    min-height: 500px;
+  }
+}
+
+@media (max-width: 350px) {
+  .page-header {
+    background: url("../img/bg-mobile@1x.jpg") no-repeat bottom center;
+    background-size: cover;
+  }
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    .page-header {
+      background-image: url("../img/bg-mobile@2x.jpg");
+      background-size: cover;
+    }
+  }
+}
