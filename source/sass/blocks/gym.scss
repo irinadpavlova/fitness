@@ -1,0 +1,288 @@
+.gym {
+  width: 100%;
+  padding-top: 120px;
+  padding-bottom: 122px;
+  background-color: $white;
+}
+
+.gym__container {
+  width: 86.38%;
+  padding: 0 10px;
+  margin: 0 auto;
+  max-width: 1370px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.gym__info {
+  width: 30.36%;
+  margin-right: 7.5%;
+  margin-left: 5.21%;
+}
+
+.gym__info h2 {
+  margin: 0;
+  padding-top: 43px;
+  padding-bottom: 12px;
+
+  @include title-desktop;
+}
+
+.gym em {
+  display: block;
+  padding-bottom: 27px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+}
+
+.gym p {
+  margin: 0;
+  padding-bottom: 11px;
+}
+
+.gym__image {
+  width: 56.9%;
+  height: 401px;
+}
+
+.gym__image img {
+  display: block;
+  width: 100%;
+  height: 401px;
+  object-fit: cover;
+}
+
+.gym__video {
+  position: relative;
+  margin-top: -115px;
+  margin-left: 37.8%;
+}
+
+.gym__opacity::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(20, 54, 122, 0.5);
+}
+
+.gym__video img {
+  display: block;
+  width: 364px;
+  height: 228px;
+}
+
+.gym__video button {
+  position: absolute;
+  z-index: 2;
+  top: 80px;
+  left: 144px;
+  width: 72px;
+  height: 72px;
+  background: linear-gradient(44.89deg, #003d85 25.38%, #b80027 74.89%);
+  border: none;
+  padding: 0;
+  border-radius: 50%;
+  cursor: pointer;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: -12px;
+    left: -14px;
+    width: 100px;
+    height: 100px;
+    background-image: url("../img/play-ring.png");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    top: 27px;
+    left: 31px;
+    width: 17px;
+    height: 17px;
+    background-image: url("../img/play.svg");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+  }
+
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
+}
+
+@media (max-width: 1280px) {
+  .gym__video {
+    margin-top: -160px;
+  }
+
+  .gym__info h2 {
+    padding-top: 20px;
+    padding-bottom: 12px;
+    font-size: 43px;
+    line-height: 43px;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .gym {
+    width: 100%;
+    padding-top: 95px;
+    padding-bottom: 100px;
+  }
+
+  .gym__container {
+    width: 90.89%;
+    flex-direction: column;
+  }
+
+  .gym__info {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 36px;
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .gym__info h2 {
+    padding-top: 0;
+    padding-bottom: 12px;
+
+    @include title-tablet;
+  }
+
+  .gym p {
+    width: 85%;
+    margin: 0 auto;
+    padding-bottom: 8px;
+  }
+
+  .gym__more-info {
+    display: none;
+  }
+
+  .gym__image {
+    width: 100%;
+    height: 345px;
+  }
+
+  .gym__image img {
+    height: 345px;
+    object-fit: cover;
+  }
+
+  .gym__video {
+    width: 39%;
+    margin-top: -85px;
+    margin-left: 30.5%;
+  }
+
+  .gym__opacity::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(20, 54, 122, 0.5);
+  }
+
+  .gym__video img {
+    width: 100%;
+    height: 167px;
+    object-fit: cover;
+  }
+
+  .gym__video button {
+    top: 50%;
+    left: 50%;
+    margin-top: -26px;
+    margin-left: -26px;
+    width: 52px;
+    height: 52px;
+
+    &::before {
+      top: -23px;
+      left: -24px;
+      background-size: 73px 73px;
+    }
+
+    &::after {
+      top: 17px;
+      left: 20px;
+      background-size: 9px 11px;
+    }
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .gym {
+    padding-top: 66px;
+    padding-bottom: 70px;
+  }
+
+  .gym__container {
+    width: 100%;
+    padding: 0;
+  }
+
+  .gym__info {
+    width: 100%;
+    padding: 0 15px;
+    margin-bottom: 25px;
+    text-align: left;
+  }
+
+  .gym__info h2 {
+    padding-bottom: 9px;
+
+    @include title-mobile;
+  }
+
+  .gym em {
+    padding-bottom: 12px;
+  }
+
+  .gym p {
+    width: 100%;
+    margin: 0;
+    padding-bottom: 10px;
+  }
+
+  .gym .gym__main-info {
+    width: 90%;
+  }
+
+  .gym__image {
+    width: 100%;
+    height: 313px;
+    margin-bottom: 40px;
+  }
+
+  .gym__image img {
+    height: 313px;
+    object-fit: cover;
+  }
+
+  .gym__video {
+    width: 100%;
+    margin-top: 0;
+    margin-left: 0;
+  }
+
+  .gym__video img {
+    width: 100%;
+  }
+}

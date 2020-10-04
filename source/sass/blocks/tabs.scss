@@ -1,0 +1,153 @@
+.tabs {
+  position: relative;
+
+  @include list-reset;
+  display: flex;
+  flex-wrap: wrap;
+  width: 29.65%;
+  margin: 0 auto;
+  margin-bottom: 51px;
+
+  &::before {
+    position: absolute;
+    content: "";
+    bottom: -14px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: rgba(120, 120, 120, 0.2);
+  }
+}
+
+.tabs li {
+  margin-right: 13.5%;
+
+  &:nth-of-type(3n) {
+    margin-right: 0;
+  }
+}
+
+.tabs button {
+  position: relative;
+  font: inherit;
+  font-size: 20px;
+  line-height: 18px;
+  font-weight: 400;
+  color: rgba(16, 38, 84, 0.5);
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  outline: none;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+.tabs button:focus,
+.tabs button:active,
+.tabs .tabs__link--current {
+  color: #102654;
+  border: none;
+  outline: none;
+
+  &::before {
+    position: absolute;
+    content: "";
+    bottom: -19px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #d10a42;
+  }
+}
+
+@media (max-width: 1355px) {
+  .tabs {
+    width: 34%;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .tabs {
+    width: 49.3%;
+    margin-bottom: 58px;
+
+    &::before {
+      bottom: -15px;
+    }
+  }
+
+  .tabs li {
+    margin-right: 16.5%;
+
+    &:nth-of-type(3n) {
+      margin-right: 0;
+    }
+  }
+
+  .tabs button {
+    font-size: 18px;
+    line-height: 27px;
+  }
+
+  .tabs button:focus,
+  .tabs button:active,
+  .tabs .tabs__link--current {
+    &::before {
+      bottom: -15px;
+    }
+  }
+}
+
+@media (max-width: 733px) {
+  .tabs {
+    width: 52%;
+  }
+}
+
+@media (max-width: 671px) {
+  .tabs {
+    width: 72%;
+
+    &::before {
+      width: 95%;
+    }
+  }
+}
+
+@media (max-width: 504px) {
+  .tabs {
+    width: 94%;
+
+    &::before {
+      width: 92%;
+    }
+  }
+
+  .tabs li {
+    margin-right: 7.5%;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .tabs {
+    width: 100%;
+    margin-bottom: 48px;
+
+    &::before {
+      width: 100%;
+      bottom: -15px;
+    }
+  }
+
+  .tabs li {
+    margin-right: 15.5%;
+  }
+
+  .tabs button {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}

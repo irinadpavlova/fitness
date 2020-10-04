@@ -1,0 +1,242 @@
+.promo__container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.promo__info {
+  width: 43%;
+  min-height: 500px;
+  padding-top: 77px;
+  padding-right: 77px;
+  padding-bottom: 80px;
+  padding-left: 77px;
+  color: $white;
+  background-color: #ed0233;
+}
+
+.promo__title-wrapper {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+.promo h2 {
+  margin: 0;
+  width: 50%;
+  font-family: "Bebas Neue", "Arial", sans-serif;
+  font-size: 90px;
+  line-height: 90px;
+  letter-spacing: 0.03em;
+}
+
+.promo p {
+  margin: 0;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+}
+
+.promo__data-wrapper {
+  width: 26.8%;
+  padding-top: 5px;
+  font-size: 18px;
+  line-height: 27px;
+}
+
+.promo__data-wrapper strong {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 60px;
+}
+
+.promo .promo__caption {
+  margin-bottom: -3px;
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    z-index: 1;
+    bottom: -5px;
+    left: 0;
+    width: 94%;
+    height: 1px;
+    border-top: 1px solid $white;
+  }
+}
+
+.promo .promo__caption:first-child {
+  &::before {
+    width: 70%;
+  }
+}
+
+.promo .promo__number {
+  position: relative;
+  margin-bottom: 11px;
+
+  &::before {
+    position: absolute;
+    content: "Марта";
+    top: 12px;
+    left: 26px;
+    width: 38px;
+    height: 11px;
+    font-family: "Roboto Condensed", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: $white;
+  }
+
+  &::after {
+    position: absolute;
+    content: "2019";
+    top: 29px;
+    left: 26px;
+    width: 38px;
+    height: 11px;
+    font-family: "Roboto Condensed", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: $white;
+  }
+}
+
+.promo a {
+  @include button;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  margin-top: 46px;
+
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
+}
+
+.promo__img-wrapper {
+  width: 57%;
+  height: 500px;
+}
+
+.promo__img-wrapper img {
+  display: block;
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+}
+
+@media (max-width: $tablet-width) {
+  .promo__info {
+    min-height: 292px;
+    padding-top: 45px;
+    padding-right: 44px;
+    padding-bottom: 48px;
+    padding-left: 44px;
+  }
+
+  .promo__title-wrapper {
+    margin-bottom: 0;
+  }
+
+  .promo h2 {
+    width: 50%;
+    font-size: 52px;
+    line-height: 52px;
+  }
+
+  .promo p {
+    font-size: 12px;
+    line-height: 18px;
+  }
+
+  .promo__data-wrapper {
+    width: 27.8%;
+    padding-top: 2px;
+    font-size: 18px;
+    line-height: 27px;
+  }
+
+  .promo__data-wrapper strong {
+    font-size: 24px;
+    line-height: 36px;
+  }
+
+  .promo .promo__caption {
+    margin-bottom: -1px;
+
+    &::before {
+      bottom: -2px;
+      left: 0;
+      width: 100%;
+      height: 1px;
+      border-top: 1px solid $white;
+    }
+  }
+
+  .promo .promo__number {
+    position: relative;
+    margin-bottom: 0;
+
+    &::before {
+      top: 4px;
+      left: 16px;
+      width: 38px;
+      height: 15px;
+      font-size: 10px;
+      line-height: 15px;
+    }
+
+    &::after {
+      top: 16px;
+      left: 16px;
+      width: 38px;
+      height: 15px;
+      font-size: 10px;
+      line-height: 15px;
+    }
+  }
+
+  .promo a {
+    padding-top: 14px;
+    padding-bottom: 12px;
+    margin-top: 29px;
+    border: 2px solid $white;
+    font-size: 10px;
+    line-height: 12px;
+  }
+
+  .promo__img-wrapper {
+    width: 57%;
+    height: 292px;
+  }
+
+  .promo__img-wrapper img {
+    width: 100%;
+    height: 292px;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .promo__container {
+    flex-direction: column;
+  }
+
+  .promo__info {
+    width: 100%;
+  }
+
+  .promo__img-wrapper {
+    width: 100%;
+  }
+}

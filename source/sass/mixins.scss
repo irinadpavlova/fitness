@@ -1,7 +1,7 @@
 @mixin text {
   font-weight: 300;
   font-size: 16px;
-  line-height: 22px;
+  line-height: 24px;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   color: #102654;
   text-align: left;
@@ -16,10 +16,11 @@
 
 @mixin title-desktop {
   font-family: "Bebas Neue", "Arial", sans-serif;
-  font-weight: 400;
+  font-weight: 700;
   font-size: 49px;
   line-height: 49px;
   letter-spacing: 0.03em;
+  text-transform: uppercase;
   color: #102654;
 }
 
@@ -48,4 +49,13 @@
   text-transform: uppercase;
   color: #ffffff;
   background-color: transparent;
+}
+
+@mixin button-reset {
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  cursor: pointer;
 }

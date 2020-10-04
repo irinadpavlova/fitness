@@ -1,0 +1,113 @@
+.prices {
+  position: relative;
+  width: 100%;
+  min-height: 851px;
+  padding-top: 113px;
+  padding-bottom: 230px;
+  margin-bottom: 11px;
+  background-color: #f8f9fc;
+  background-image: linear-gradient(transparent 88.8%, $white 12.2%);
+
+  &::before {
+    position: absolute;
+    content: "";
+    bottom: 0;
+    right: 0;
+    width: 321px;
+    height: 384px;
+    background-image: url("../img/dumbbells-desktop@1x.png");
+    background-repeat: no-repeat;
+    background-position: 100% 65%;
+  }
+}
+
+@media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+  .prices {
+    &::before {
+      width: 321px;
+      height: 382px;
+      background-image: url("../img/dumbbells-desktop@2x.png");
+      background-size: 90% auto;
+    }
+  }
+}
+
+.prices h2 {
+  margin: 0;
+  padding-bottom: 45px;
+
+  @include title-desktop;
+  text-align: center;
+}
+
+@media (max-width: $tablet-width) {
+  .prices {
+    min-height: 1879px;
+    padding-top: 95px;
+    padding-bottom: 160px;
+    margin-bottom: 0;
+    background-color: #f8f9fc;
+    background-image: linear-gradient(transparent 94.65%, $white 5.35%);
+
+    &::before {
+      position: absolute;
+      content: "";
+      bottom: 0;
+      right: 0;
+      width: 314px;
+      height: 366px;
+      background-image: url("../img/dumbbells-tablet@1x.png");
+      background-repeat: no-repeat;
+      background-position: 100% 65%;
+    }
+  }
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    .prices {
+      &::before {
+        width: 348px;
+        height: 373px;
+        background-image: url("../img/dumbbells-tablet@2x.png");
+        background-size: 100% auto;
+      }
+    }
+  }
+
+  .prices h2 {
+    margin: 0;
+    padding-bottom: 33px;
+
+    @include title-tablet;
+    text-align: center;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .prices {
+    min-height: 1487px;
+    padding-top: 66px;
+    padding-bottom: 35px;
+    background-image: none;
+    margin-bottom: 70px;
+
+    &::before {
+      width: 0;
+      height: 0;
+    }
+  }
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    .prices {
+      &::before {
+        width: 0;
+        height: 0;
+      }
+    }
+  }
+
+  .prices h2 {
+    padding-bottom: 25px;
+
+    @include title-mobile;
+  }
+}

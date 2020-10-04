@@ -1,53 +1,196 @@
 .main-banner {
-  color: $light;
-  margin-left: 8.05%;
+  width: 82.76%;
+  min-height: 556px;
+  padding-right: 48.51%;
+  margin-top: -5px;
+  background: url("../img/main-banner-desktop@1x.jpg") no-repeat top right;
+  background-size: 52% auto;
+}
+
+@media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+  .main-banner {
+    background-image: url("../img/main-banner-desktop@2x.jpg");
+    background-size: 52% auto;
+  }
 }
 
 .main-banner h1 {
   margin: 0;
-  margin-bottom: 11px;
+  padding-top: 64px;
+  font-family: "Bebas Neue", "Arial", sans-serif;
+  font-size: 109px;
+  line-height: 109px;
   font-weight: 700;
-  font-size: 54px;
-  line-height: 66px;
+  text-align: right;
+  letter-spacing: 0.03em;
+  color: $white;
+  text-transform: uppercase;
+  text-shadow: -1px 0 $white, 0 1px $white, 1px 0 $white, 0 -1px $white;
 }
 
-.main-banner p {
-  margin: 0;
-  margin-bottom: 30px;
-  font-size: 20px;
-  line-height: 24px;
+.main-banner span {
+  padding-left: 53%;
+  font-size: 49px;
+  line-height: 59px;
+  font-weight: 400;
+  letter-spacing: 0.03em;
+  text-shadow: none;
+}
+
+.main-banner ul {
+  @include list-reset;
+  margin-top: -84px;
+  padding-right: 67%;
+  padding-bottom: 84px;
+  text-align: right;
+  font-size: 14px;
+  line-height: 21px;
+  color: $white;
+}
+
+.main-banner a {
+  @include button;
+  width: 59%;
+  padding-top: 22px;
+  padding-bottom: 17px;
+  margin-left: 41%;
+}
+
+@media (max-width: 1260px) {
+  .main-banner ul {
+    padding-right: 68%;
+  }
 }
 
 @media (max-width: $tablet-width) {
   .main-banner {
-    margin-left: 0;
+    width: 100%;
+    min-height: 390px;
+    padding-right: 52%;
+    padding-left: 10%;
+    margin-top: 0;
+    background: url("../img/main-banner-tablet@1x.jpg") no-repeat top right;
+    background-size: 48% auto;
+  }
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    .main-banner {
+      background-image: url("../img/main-banner-tablet@2x.jpg");
+      background-size: 48% auto;
+    }
   }
 
   .main-banner h1 {
-    font-size: 50px;
-    line-height: 61px;
+    position: relative;
+    padding-top: 86px;
+    font-size: 86px;
+    line-height: 86px;
   }
 
-  .main-banner p {
-    font-size: 18px;
-    line-height: 22px;
+  .main-banner span {
+    position: absolute;
+    top: 50px;
+    right: 0;
+    padding-left: 53%;
+    font-size: 34px;
+    line-height: 41px;
+    letter-spacing: 0.03em;
+  }
+
+  .main-banner ul {
+    margin-top: -73px;
+    padding-right: 66%;
+    padding-bottom: 59px;
+  }
+
+  .main-banner a {
+    width: 58%;
+    margin-left: 42%;
+  }
+}
+
+@media (max-width: 940px) {
+  .main-banner {
+    padding-left: 0;
   }
 }
 
 @media (max-width: $mobile-width) {
   .main-banner {
-    padding-top: 127px;
-    padding-left: 15px;
-    padding-right: 15px;
+    min-height: 320px;
+    padding-right: 0;
+    margin-top: 0;
+    background: none;
   }
 
   .main-banner h1 {
-    font-size: 36px;
-    line-height: 45px;
+    position: static;
+    padding-left: 47%;
+    padding-top: 6px;
+    font-size: 78px;
+    line-height: 78px;
   }
 
-  .main-banner p {
-    width: 70%;
-    font-size: 16px;
+  .main-banner span {
+    position: static;
+    padding-left: 60%;
+    font-size: 28px;
+    line-height: 34px;
+    letter-spacing: 0.03em;
+  }
+
+  .main-banner ul {
+    margin-top: -69px;
+    padding-right: 28%;
+    padding-bottom: 56px;
+  }
+
+  .main-banner a {
+    width: 100%;
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 655px) {
+  .main-banner ul {
+    padding-right: 33%;
+  }
+}
+
+@media (max-width: 565px) {
+  .main-banner ul {
+    padding-right: 38%;
+  }
+}
+
+@media (max-width: 565px) {
+  .main-banner ul {
+    padding-right: 44%;
+  }
+}
+
+@media (max-width: 435px) {
+  .main-banner h1 {
+    padding-left: 0;
+  }
+
+  .main-banner ul {
+    padding-right: 52%;
+  }
+}
+
+@media (max-width: 370px) {
+  .main-banner ul {
+    padding-right: 56%;
+  }
+}
+
+@media (max-width: 350px) {
+  .main-banner span {
+    padding-left: 53%;
+  }
+
+  .main-banner ul {
+    padding-right: 62%;
   }
 }

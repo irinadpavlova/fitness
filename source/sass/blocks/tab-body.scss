@@ -1,0 +1,288 @@
+.tab-body {
+  display: none;
+}
+
+.tab-body--current {
+  display: block;
+}
+
+.tab-body__list {
+  @include list-reset;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.tab-body__item {
+  position: relative;
+  z-index: 2;
+  width: 31%;
+  min-height: 446px;
+  padding-top: 56px;
+  padding-right: 69px;
+  padding-bottom: 60px;
+  padding-left: 70px;
+  border: 7px solid transparent;
+  margin-right: 3.47%;
+  background-color: $white;
+  outline: none;
+
+  &:nth-of-type(3n) {
+    margin-right: 0;
+  }
+
+  &:hover,
+  &:focus {
+    border-image: linear-gradient(#d10a42, #00359f) 180;
+  }
+}
+
+.tab-body__item h3 {
+  margin: 0;
+  padding-bottom: 10px;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 29px;
+  text-align: center;
+  color: #102654;
+}
+
+.tab-body__item p {
+  margin: 0;
+  padding-bottom: 10px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #495a7d;
+  text-align: center;
+}
+
+.tab-body__item strong {
+  position: relative;
+  padding-right: 43px;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 90px;
+  color: #103aae;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 16px;
+    right: -2px;
+    width: 30px;
+    height: 42px;
+    background-image: url("../img/ruble.svg");
+    background-repeat: no-repeat;
+  }
+}
+
+.tab-body__item .tab-body__item-price {
+  margin-top: -106px;
+  margin-bottom: 25px;
+}
+
+.tab-body__item .tab-body__item-shadow {
+  font-weight: 700;
+  font-size: 100px;
+  line-height: 150px;
+  color: #e8e8e8;
+  opacity: 0.48;
+}
+
+.tab-body__item a {
+  @include button;
+  color: #102654;
+  border: 2px solid #102654;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  outline: none;
+
+  &:hover,
+  &:focus {
+    color: $white;
+    background: linear-gradient(to right, #d10a42, #00359f);
+    border: none;
+    padding-top: 26px;
+    padding-right: 12px;
+    padding-bottom: 26px;
+    padding-left: 12px;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
+}
+
+@media (max-width: 1355px) {
+  .tab-body__item .tab-body__item-shadow {
+    font-size: 70px;
+    line-height: 150px;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .tab-body__list {
+    width: 65%;
+    margin: 0 auto;
+  }
+
+  .tab-body__item {
+    width: 100%;
+    min-height: 448px;
+    padding-top: 55px;
+    padding-right: 24.8%;
+    padding-bottom: 55px;
+    padding-left: 24.8%;
+    margin-right: 0;
+    margin-bottom: 40px;
+    background-color: $white;
+
+    &:hover,
+    &:focus {
+      border-image: linear-gradient(#d10a42, #00359f) 180;
+    }
+  }
+
+  .tab-body__item h3 {
+    margin: 0;
+    padding-bottom: 10px;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 29px;
+    text-align: center;
+    color: #102654;
+  }
+
+  .tab-body__item p {
+    padding-bottom: 13px;
+  }
+
+  .tab-body__item strong {
+    position: relative;
+    padding-right: 43px;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 90px;
+    color: #103aae;
+
+    &::before {
+      position: absolute;
+      content: "";
+      top: 16px;
+      right: -2px;
+      width: 30px;
+      height: 42px;
+      background-image: url("../img/ruble.svg");
+      background-repeat: no-repeat;
+    }
+  }
+
+  .tab-body__item .tab-body__item-price {
+    margin-top: -110px;
+    margin-bottom: 22px;
+  }
+
+  .tab-body__item .tab-body__item-shadow {
+    font-weight: 700;
+    font-size: 100px;
+    line-height: 150px;
+    color: #e8e8e8;
+    opacity: 0.48;
+  }
+
+  .tab-body__item a {
+    @include button;
+    color: #102654;
+    border: 2px solid #102654;
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+}
+
+@media (max-width: 733px) {
+  .tab-body__item {
+    padding-top: 20px;
+    padding-right: 14%;
+    padding-bottom: 20px;
+    padding-left: 14%;
+    min-height: 300px;
+  }
+
+  .tab-body__item strong {
+    padding-right: 40px;
+    font-size: 40px;
+    line-height: 60px;
+
+    &::before {
+      top: 11px;
+      right: -2px;
+      width: 34px;
+      height: 49px;
+      background-size: 50% 50%;
+    }
+  }
+
+  .tab-body__item .tab-body__item-shadow {
+    font-size: 66px;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .tab-body__list {
+    width: 100%;
+  }
+
+  .tab-body__item {
+    width: 100%;
+    min-height: 384px;
+    padding-top: 44px;
+    padding-right: 11.8%;
+    padding-bottom: 44px;
+    padding-left: 11.8%;
+    margin-bottom: 35px;
+  }
+
+  .tab-body__item h3 {
+    padding-bottom: 9px;
+    font-size: 22px;
+    line-height: 24px;
+  }
+
+  .tab-body__item p {
+    padding-bottom: 9px;
+  }
+
+  .tab-body__item strong {
+    padding-right: 32px;
+    font-size: 48px;
+    line-height: 72px;
+
+    &::before {
+      top: 12px;
+      right: -4px;
+      width: 24px;
+      height: 33px;
+      background-size: 100% 100%;
+    }
+  }
+
+  .tab-body__item .tab-body__item-price {
+    margin-top: -83px;
+    margin-bottom: 20px;
+  }
+
+  .tab-body__item .tab-body__item-shadow {
+    font-size: 80px;
+    line-height: 120px;
+  }
+
+  .tab-body__item a {
+    @include button;
+    color: #102654;
+    border: 2px solid #102654;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    outline: none;
+  }
+}

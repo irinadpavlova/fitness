@@ -1,0 +1,61 @@
+.main-header {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.main-header__logo svg {
+  width: 89px;
+  height: 20px;
+}
+
+.main-header__phone {
+  font-family: "Bebas Neue", "Arial", sans-serif;
+  font-size: 26px;
+  line-height: 26px;
+  letter-spacing: 0.03em;
+  font-weight: 700;
+  color: $white;
+}
+
+@media (max-width: $tablet-width) {
+  .main-header {
+    padding-bottom: 18px;
+  }
+
+  .main-header__logo {
+    padding-top: 3px;
+  }
+
+  .main-header__logo svg {
+    width: 81px;
+    height: 19px;
+  }
+
+  .main-header__phone {
+    font-size: 24px;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .main-header {
+    padding-bottom: 22px;
+  }
+
+  .main-header__logo {
+    padding-top: 0;
+  }
+
+  .main-header__logo svg {
+    width: 68px;
+    height: 15px;
+  }
+
+  .main-header__phone {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
