@@ -4,15 +4,12 @@
   document.querySelector('.tabs').addEventListener('click', fTabs);
   function fTabs(event) {
     if (String(event.target.className) === 'tabs__link') {
-      // dataTab - номер вкладки, которую нужно отобразить
       var dataTab = event.target.getAttribute('data-tab');
-      // отключаю класс active
       var tabH = document.getElementsByClassName('tabs__link');
       for (var i = 0; i < tabH.length; i++) {
         tabH[i].classList.remove('tabs__link--current');
       }
       event.target.classList.add('tabs__link--current');
-      // все вкладки с содержимым
       var tabBody = document.getElementsByClassName('tab-body');
       for (var j = 0; j < tabBody.length; j++) {
         if (Number(dataTab) === j) {
@@ -23,4 +20,28 @@
       }
     }
   }
+})();
+
+(function () {
+  var swiper = new Swiper('.swiper-container', {
+    slidesPerView: 1,
+    spaceBetween: 35,
+    slidesPerGroup: 1,
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    breakpoints : {
+      768: {
+        slidesPerView: 2,
+        spaceBetween : 30,
+        slidesPerGroup: 2,
+      },
+      1200: {
+        slidesPerView: 4,
+        spaceBetween: 40,
+        slidesPerGroup: 4,
+      }
+    }
+  });
 })();
