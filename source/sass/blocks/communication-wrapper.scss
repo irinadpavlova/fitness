@@ -1,0 +1,51 @@
+.communication-wrapper {
+  width: 100%;
+  background-image: linear-gradient(to right, #102654 50%, transparent 50%);
+  border-top: 1px solid #74819c;
+}
+
+.communication-wrapper__container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.communication-wrapper h2 {
+  margin: 0;
+
+  @include title-desktop;
+}
+
+.communication-wrapper a {
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .communication-wrapper {
+    width: 100%;
+    background-image: none;
+    border-top: none;
+  }
+
+  .communication-wrapper__container {
+    width: 100%;
+    padding: 0;
+    flex-direction: column;
+  }
+
+  .communication-wrapper h2 {
+    @include title-tablet;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .communication-wrapper h2 {
+    @include title-mobile;
+  }
+}

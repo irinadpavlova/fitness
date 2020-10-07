@@ -33,7 +33,7 @@
 .swiper-wrapper .trainers__swiper-slide.swiper-slide {
   position: relative;
   box-sizing: border-box;
-  width: 22.4%!important;
+  width: 22.4% !important;
   min-height: 294px;
   padding-top: 50px;
   padding-right: 10px;
@@ -50,7 +50,6 @@
 
   &:hover,
   &:focus {
-
     .trainers__info {
       display: block;
       position: relative;
@@ -209,7 +208,7 @@
   }
 
   .swiper-wrapper .trainers__swiper-slide.swiper-slide {
-    width: 47.4%!important;
+    width: 47.4% !important;
 
     &:nth-of-type(2n) {
       margin-right: 5%;
@@ -248,7 +247,7 @@
   }
 
   .swiper-wrapper .trainers__swiper-slide.swiper-slide {
-    width: 100%!important;
+    width: 100% !important;
     min-height: 274px;
     padding-top: 42px;
     padding-bottom: 12px;
@@ -262,7 +261,7 @@
     }
 
     &:not(:first-child) {
-      margin-left: 28.3%!important;
+      margin-left: 28.3% !important;
     }
   }
 

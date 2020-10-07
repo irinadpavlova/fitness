@@ -1,0 +1,19 @@
+.logo svg {
+  width: 89px;
+  height: 20px;
+  fill: $white;
+}
+
+@media (max-width: $tablet-width) {
+  .logo svg {
+    width: 82px;
+    height: 18px;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .logo svg {
+    width: 68px;
+    height: 15px;
+  }
+}

@@ -23,7 +23,7 @@
 })();
 
 (function () {
-  var swiper = new Swiper('.swiper-container', {
+  var swiper = new Swiper('.trainers__swiper-container', {
     slidesPerView: 1,
     spaceBetween: 35,
     slidesPerGroup: 1,
@@ -43,5 +43,18 @@
         slidesPerGroup: 4,
       }
     }
+  });
+})();
+
+(function () {
+  var newSwiper = new Swiper('.reviews__swiper-container', {
+    loop: false,
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    spaceBetween: 0,
+    slidesPerView: 'auto',
+    autoHeight: true
   });
 })();

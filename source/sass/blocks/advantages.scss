@@ -2,7 +2,7 @@
   width: 100%;
   min-height: 664px;
   padding-top: 114px;
-  padding-bottom: 60px;
+  padding-bottom: 0;
   background-color: #f8f9fc;
   color: #102654;
 }
@@ -41,6 +41,11 @@
 
   &:nth-of-type(4) {
     padding-left: 21px;
+  }
+
+  &:nth-of-type(4),
+  &:nth-of-type(5) {
+    margin-bottom: 30px;
   }
 }
 
@@ -172,7 +177,7 @@
     width: 100%;
     min-height: 664px;
     padding-top: 96px;
-    padding-bottom: 60px;
+    padding-bottom: 65px;
   }
 
   .advantages ul {
@@ -279,7 +284,7 @@
   .advantages {
     min-height: 1231px;
     padding-top: 66px;
-    padding-bottom: 60px;
+    padding-bottom: 34px;
   }
 
   .advantages__container {
@@ -321,6 +326,7 @@
 
   .advantages li:nth-of-type(4) {
     padding-left: 46px;
+    margin-bottom: 21px;
   }
 
   .advantages__item:nth-of-type(2) .advantages__decryption-wrapper,

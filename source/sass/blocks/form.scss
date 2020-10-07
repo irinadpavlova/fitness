@@ -1,0 +1,139 @@
+.form {
+  width: 50%;
+  min-height: 337px;
+  padding-top: 63px;
+  padding-right: 170px;
+  padding-bottom: 45px;
+  padding-left: 0;
+  background-color: #102654;
+  color: $white;
+}
+
+.form h2 {
+  padding-bottom: 45px;
+  color: $white;
+}
+
+.form button {
+  @include button;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-size: 14px;
+  line-height: 16px;
+  border: 3px solid $white;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
+}
+
+.form input {
+  margin: 0;
+  vertical-align: middle;
+  width: 46.2%;
+  padding-top: 5px;
+  padding-right: 5px;
+  padding-bottom: 5px;
+  padding-left: 0;
+  margin-bottom: 30px;
+  margin-right: 6.3%;
+  border-radius: 0;
+  color: $white;
+}
+
+.form input[type="tel"] {
+  margin-right: 0;
+}
+
+.form input[placeholder] {
+  border: 1px solid transparent;
+  border-bottom: 1px solid #74819c;
+  background-color: transparent;
+  font-size: 14px;
+  line-height: 16px;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+
+  &:hover {
+    border-bottom: 1px solid rgba($white, 0.8);
+  }
+
+  &:focus,
+  &:active {
+    border: 1px solid rgba($white, 0.5);
+  }
+}
+
+.form ::-webkit-input-placeholder {
+  color: $white;
+}
+
+.form :-ms-input-placeholder {
+  color: $white;
+}
+
+.form ::-moz-placeholder {
+  color: $white;
+}
+
+@media (max-width: $tablet-width) {
+  .form {
+    width: 100%;
+    min-height: 324px;
+    padding-top: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+  }
+
+  .form__container {
+    width: 68%;
+    padding-top: 66px;
+    padding-right: 38px;
+    padding-bottom: 20px;
+    padding-left: 10px;
+    margin: 0 auto;
+  }
+
+  .form h2 {
+    padding-bottom: 36px;
+  }
+
+  .form input {
+    width: 43.2%;
+    margin-right: 12.3%;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .form {
+    min-height: 386px;
+  }
+
+  .form__container {
+    width: 100%;
+    padding-top: 66px;
+    padding-right: 15px;
+    padding-bottom: 20px;
+    padding-left: 15px;
+  }
+
+  .form h2 {
+    padding-bottom: 38px;
+  }
+
+  .form input {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 32px;
+  }
+
+  .form button {
+    margin-top: 8px;
+  }
+}
