@@ -11,21 +11,16 @@
   text-align: center;
 }
 
-.reviews .reviews__swiper-container {
-  width: 58% !important;
+.reviews__nav-wrapper {
+  width: 48.28%;
+  margin: 0 auto;
   position: relative;
 }
 
-.reviews .reviews__swiper-wrapper {
-  width: 83.33% !important;
-}
-
-.reviews .reviews__swiper-slide {
+.reviews__swiper-slide {
   box-sizing: border-box;
   width: 100%;
   min-height: 242px;
-  margin-right: 18% !important;
-  margin-left: 10% !important;
   padding-top: 54px;
   padding-right: 60px;
   padding-left: 170px;
@@ -34,10 +29,6 @@
   background: url("../img/reviews@1x.png") no-repeat 64px 61px;
   background-size: 80px auto;
   background-color: #1c3374;
-
-  &:first-child {
-    margin-left: 10% !important;
-  }
 }
 
 @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -71,11 +62,11 @@
 }
 
 .reviews .reviews__button-prev {
-  left: 0;
+  left: -56px;
 }
 
 .reviews .reviews__button-next {
-  right: 0;
+  right: -56px;
   transform: rotate(180deg);
 }
 
@@ -106,27 +97,17 @@
     @include title-tablet;
   }
 
-  .reviews .reviews__swiper-container {
-    width: 100% !important;
-  }
-
-  .reviews .reviews__swiper-wrapper {
-    width: 83.33% !important;
+  .reviews__nav-wrapper {
+    width: 83.48%;
   }
 
   .reviews .reviews__swiper-slide {
     box-sizing: border-box;
     width: 100%;
     min-height: 242px;
-    margin-right: 18% !important;
-    margin-left: 10% !important;
     padding-top: 55px;
     padding-right: 60px;
     padding-left: 173px;
-
-    &:first-child {
-      margin-left: 10% !important;
-    }
   }
 }
 
@@ -142,16 +123,14 @@
     @include title-mobile;
   }
 
-  .reviews .reviews__swiper-wrapper {
-    width: 77.83% !important;
+  .reviews__nav-wrapper {
+    width: 77.63%;
   }
 
   .reviews .reviews__swiper-slide {
     box-sizing: border-box;
     width: 100%;
     min-height: 335px;
-    margin-right: 18% !important;
-    margin-left: 14% !important;
     padding-top: 50px;
     padding-right: 25px;
     padding-left: 25px;
@@ -159,10 +138,6 @@
     background: url("../img/reviews@1x.png") no-repeat 42px 42px;
     background-size: 65px auto;
     background-color: #1c3374;
-
-    &:first-child {
-      margin-left: 14% !important;
-    }
   }
 
   .reviews h3 {
@@ -188,5 +163,13 @@
     z-index: 5;
     width: 17px;
     height: 18px;
+  }
+
+  .reviews .reviews__button-next {
+    right: -32px;
+  }
+
+  .reviews .reviews__button-prev {
+    left: -32px;
   }
 }
