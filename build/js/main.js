@@ -23,8 +23,6 @@
 })();
 
 (function () {
-  // var TABLET_WIDTH = 1199;
-  // var MOBILE_WIDTH = 767;
   var swiper = new Swiper('.trainers__swiper-container', {
     slidesPerView: 4,
     spaceBetween: 40,
