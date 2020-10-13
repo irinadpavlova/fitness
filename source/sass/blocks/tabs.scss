@@ -71,7 +71,7 @@
 
 @media (max-width: $tablet-width) {
   .tabs {
-    width: 49.3%;
+    width: 335px;
     margin-bottom: 58px;
 
     &::before {
@@ -101,39 +101,9 @@
   }
 }
 
-@media (max-width: 733px) {
-  .tabs {
-    width: 52%;
-  }
-}
-
-@media (max-width: 671px) {
-  .tabs {
-    width: 72%;
-
-    &::before {
-      width: 95%;
-    }
-  }
-}
-
-@media (max-width: 504px) {
-  .tabs {
-    width: 94%;
-
-    &::before {
-      width: 92%;
-    }
-  }
-
-  .tabs li {
-    margin-right: 7.5%;
-  }
-}
-
 @media (max-width: $mobile-width) {
   .tabs {
-    width: 100%;
+    width: 290px;
     margin-bottom: 48px;
 
     &::before {
@@ -143,11 +113,20 @@
   }
 
   .tabs li {
-    margin-right: 15.5%;
+    margin-right: 45px;
   }
 
   .tabs button {
     font-size: 16px;
     line-height: 24px;
+  }
+
+
+  .tabs button:focus,
+  .tabs button:active,
+  .tabs .tabs__link--current {
+    &::before {
+      width: 113%;
+    }
   }
 }

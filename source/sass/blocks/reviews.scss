@@ -20,7 +20,6 @@
 .reviews__swiper-slide {
   box-sizing: border-box;
   width: 100%;
-  min-height: 242px;
   padding-top: 54px;
   padding-right: 60px;
   padding-left: 170px;
@@ -42,7 +41,8 @@
 .reviews .reviews__button-next,
 .reviews .reviews__button-prev {
   position: absolute;
-  top: 105px;
+  top: 50%;
+  margin-top: -16px;
   z-index: 5;
   width: 16px;
   height: 32px;
@@ -80,6 +80,7 @@
 
 .reviews__swiper-slide p {
   margin: 0;
+  margin-bottom: 20px;
   font-weight: 400;
   font-size: 16px;
   line-height: 22px;
@@ -104,7 +105,6 @@
   .reviews .reviews__swiper-slide {
     box-sizing: border-box;
     width: 100%;
-    min-height: 242px;
     padding-top: 55px;
     padding-right: 60px;
     padding-left: 173px;
@@ -114,11 +114,11 @@
 @media (max-width: $mobile-width) {
   .reviews {
     padding-top: 17px;
-    padding-bottom: 71px;
+    padding-bottom: 69px;
   }
 
   .reviews h2 {
-    padding-bottom: 44px;
+    padding-bottom: 46px;
 
     @include title-mobile;
   }
@@ -130,7 +130,6 @@
   .reviews .reviews__swiper-slide {
     box-sizing: border-box;
     width: 100%;
-    min-height: 335px;
     padding-top: 50px;
     padding-right: 25px;
     padding-left: 25px;
@@ -150,6 +149,7 @@
   }
 
   .reviews p {
+    margin-bottom: 26px;
     font-weight: 400;
     font-size: 16px;
     line-height: 22px;
@@ -159,7 +159,8 @@
   .reviews .reviews__button-next,
   .reviews .reviews__button-prev {
     position: absolute;
-    top: 160px;
+    top: 50%;
+    margin-top: -9px;
     z-index: 5;
     width: 17px;
     height: 18px;

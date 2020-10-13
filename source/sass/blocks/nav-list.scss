@@ -34,13 +34,14 @@
     padding-bottom: 5px;
     padding-left: 0;
   }
-
-  .nav-list li {
-    margin-left: 3.75%;
-  }
 }
 
 @media (max-width: $mobile-width) {
+  .nav-list {
+    padding-top: 4px;
+    padding-bottom: 0;
+  }
+
   .nav-list a {
     font-weight: 400;
     font-size: 16px;

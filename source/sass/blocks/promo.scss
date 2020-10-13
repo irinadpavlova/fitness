@@ -5,10 +5,9 @@
 
 .promo__info {
   width: 43%;
-  min-height: 500px;
   padding-top: 77px;
   padding-right: 77px;
-  padding-bottom: 80px;
+  padding-bottom: 20px;
   padding-left: 77px;
   color: $white;
   background-color: #ed0233;
@@ -126,19 +125,32 @@
 
 .promo__img-wrapper {
   width: 57%;
-  height: 500px;
 }
 
 .promo__img-wrapper img {
   display: block;
   width: 100%;
-  height: 500px;
-  object-fit: cover;
+  height: auto;
+}
+
+@media (max-width: 1300px) {
+  .promo__info {
+    padding-top: 50px;
+  }
+}
+
+@media (max-width: 1210px) {
+  .promo__info {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
 }
 
 @media (max-width: $tablet-width) {
   .promo__info {
-    min-height: 292px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     padding-top: 45px;
     padding-right: 44px;
     padding-bottom: 48px;
@@ -146,7 +158,8 @@
   }
 
   .promo__title-wrapper {
-    margin-bottom: 0;
+    width: 203px;
+    margin: 0 auto;
   }
 
   .promo h2 {
@@ -155,16 +168,9 @@
     line-height: 52px;
   }
 
-  .promo p {
-    font-size: 12px;
-    line-height: 18px;
-  }
-
   .promo__data-wrapper {
     width: 27.8%;
     padding-top: 2px;
-    font-size: 18px;
-    line-height: 27px;
   }
 
   .promo__data-wrapper strong {
@@ -207,10 +213,17 @@
     }
   }
 
+  .promo .promo__text {
+    text-align: center;
+  }
+
   .promo a {
+    width: 203px;
     padding-top: 14px;
     padding-bottom: 12px;
     margin-top: 29px;
+    margin-left: auto;
+    margin-right: auto;
     border: 2px solid $white;
     font-size: 10px;
     line-height: 12px;
@@ -218,12 +231,17 @@
 
   .promo__img-wrapper {
     width: 57%;
-    height: 292px;
+  }
+}
+
+@media (max-width: 917px) {
+  .promo .promo__text {
+    text-align: left;
   }
 
-  .promo__img-wrapper img {
-    width: 100%;
-    height: 292px;
+  .promo p {
+    font-size: 12px;
+    line-height: 18px;
   }
 }
 
@@ -236,7 +254,25 @@
     width: 100%;
   }
 
+  .promo .promo__text {
+    text-align: center;
+  }
+
   .promo__img-wrapper {
     width: 100%;
+  }
+
+  .promo a {
+    width: 203px;
+  }
+}
+
+@media (max-width: 320px) {
+  .promo__info {
+    padding-bottom: 50px;
+  }
+
+  .promo .promo__text {
+    text-align: left;
   }
 }

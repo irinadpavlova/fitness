@@ -18,7 +18,7 @@
   position: relative;
   z-index: 2;
   margin: 0;
-  padding-top: 194px;
+  padding-top: 81%;
   font-weight: 700;
   font-size: 18px;
   line-height: 27px;
@@ -28,8 +28,18 @@
 
 .trainers__swiper-slide {
   box-sizing: border-box;
+}
+
+.trainers__slide-wrapper {
   position: relative;
-  min-height: 294px;
+  width: 100%;
+  padding-bottom: 113.08%;
+}
+
+.trainers__slide-image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
   padding-top: 50px;
   padding-right: 10px;
   padding-bottom: 22px;
@@ -59,53 +69,53 @@
   }
 }
 
-.trainers__swiper-slide--anna {
+.trainers__swiper-slide--anna .trainers__slide-image {
   background: url("../img/anna-desktop@1x.jpg") no-repeat top center;
   background-color: #ced1d4;
   background-size: cover;
 }
 
 @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-  .trainers__swiper-slide--anna {
+  .trainers__swiper-slide--anna .trainers__slide-image {
     background-image: url("../img/anna-desktop@2x.jpg");
     background-size: cover;
   }
 }
 
-.trainers__swiper-slide--alex {
+.trainers__swiper-slide--alex .trainers__slide-image {
   background: url("../img/alex-desktop@1x.jpg") no-repeat top center;
   background-color: #ced1d4;
   background-size: cover;
 }
 
 @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-  .trainers__swiper-slide--alex {
+  .trainers__swiper-slide--alex .trainers__slide-image {
     background-image: url("../img/alex-desktop@2x.jpg");
     background-size: cover;
   }
 }
 
-.trainers__swiper-slide--alexander {
+.trainers__swiper-slide--alexander .trainers__slide-image {
   background: url("../img/alexander-desktop@1x.jpg") no-repeat top center;
   background-color: #ced1d4;
   background-size: cover;
 }
 
 @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-  .trainers__swiper-slide--alexander {
+  .trainers__swiper-slide--alexander .trainers__slide-image {
     background-image: url("../img/alexander-desktop@2x.jpg");
     background-size: cover;
   }
 }
 
-.trainers__swiper-slide--maria {
+.trainers__swiper-slide--maria .trainers__slide-image {
   background: url("../img/maria-desktop@1x.jpg") no-repeat top center;
   background-color: #ced1d4;
   background-size: cover;
 }
 
 @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-  .trainers__swiper-slide--maria {
+  .trainers__swiper-slide--maria .trainers__slide-image {
     background-image: url("../img/maria-desktop@2x.jpg");
     background-size: cover;
   }
@@ -152,7 +162,8 @@
 .trainers__button-prev,
 .trainers__button-next {
   position: absolute;
-  top: 131px;
+  top: 50%;
+  margin-top: -16px;
   z-index: 5;
   width: 16px;
   height: 32px;
@@ -180,6 +191,20 @@
   transform: rotate(180deg);
 }
 
+@media (max-width: 1300px) {
+  .trainers__slide-image {
+    padding-top: 20px;
+  }
+
+  .trainers h3 {
+    padding-top: 91%;
+  }
+
+  .trainers__info p {
+    padding-bottom: 10px;
+  }
+}
+
 @media (max-width: $tablet-width) {
   .trainers {
     padding-top: 96px;
@@ -196,6 +221,36 @@
   .trainers__nav-wrapper {
     width: 84%;
   }
+
+  .trainers__slide-wrapper {
+    padding-bottom: 109.7%;
+  }
+
+  .trainers__slide-image {
+    padding-top: 50px;
+  }
+
+  .trainers h3 {
+    padding-top: 78%;
+  }
+
+  .trainers__info p {
+    padding-bottom: 60px;
+  }
+}
+
+@media (max-width: 768px) {
+  .trainers h3 {
+    padding-top: 214px;
+  }
+
+  .trainers h3 {
+    padding-top: 78%;
+  }
+
+  .trainers__info p {
+    padding-bottom: 31px;
+  }
 }
 
 @media (max-width: $mobile-width) {
@@ -208,10 +263,13 @@
     width: 78%;
   }
 
-  .trainers__swiper-slide {
-    min-height: 274px;
-    padding-top: 42px;
+  .trainers__slide-image {
+    padding-top: 80px;
     padding-bottom: 12px;
+  }
+
+  .trainers__slide-wrapper {
+    padding-bottom: 121.24%;
   }
 
   .trainers__info ul {
@@ -238,6 +296,10 @@
     text-align: center;
   }
 
+  .trainers h3 {
+    padding-top: 100%;
+  }
+
   .trainers__info p {
     margin-top: -4px;
     padding-bottom: 34px;
@@ -245,7 +307,7 @@
 
   .trainers__button-prev,
   .trainers__button-next {
-    top: 127px;
+    margin-top: -10px;
     z-index: 5;
     width: 16px;
     height: 20px;
@@ -257,5 +319,27 @@
 
   .trainers__button-next {
     right: -32px;
+  }
+}
+
+@media (max-width: 626px) {
+  .trainers h3 {
+    padding-top: 95%;
+  }
+}
+
+@media (max-width: 540px) {
+  .trainers h3 {
+    padding-top: 90%;
+  }
+}
+
+@media (max-width: 450px) {
+  .trainers__slide-image {
+    padding-top: 42px;
+  }
+
+  .trainers h3 {
+    padding-top: 90%;
   }
 }

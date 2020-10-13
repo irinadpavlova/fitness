@@ -22,6 +22,7 @@
   padding-right: 69px;
   padding-bottom: 60px;
   padding-left: 70px;
+  margin-bottom: 30px;
   border: 7px solid transparent;
   margin-right: 3.47%;
   background-color: $white;
@@ -31,8 +32,7 @@
     margin-right: 0;
   }
 
-  &:hover,
-  &:focus {
+  &:hover {
     border: 7px solid;
     border-image: linear-gradient(#d10a42, #00359f) 90;
   }
@@ -124,7 +124,7 @@
 
 @media (max-width: $tablet-width) {
   .tab-body__list {
-    width: 65%;
+    width: 443px;
     margin: 0 auto;
   }
 
@@ -132,9 +132,9 @@
     width: 100%;
     min-height: 448px;
     padding-top: 55px;
-    padding-right: 24.8%;
+    padding-right: 110px;
     padding-bottom: 55px;
-    padding-left: 24.8%;
+    padding-left: 110px;
     margin-right: 0;
     margin-bottom: 40px;
     background-color: $white;
@@ -203,14 +203,6 @@
 }
 
 @media (max-width: 733px) {
-  .tab-body__item {
-    padding-top: 20px;
-    padding-right: 14%;
-    padding-bottom: 20px;
-    padding-left: 14%;
-    min-height: 300px;
-  }
-
   .tab-body__item strong {
     padding-right: 40px;
     font-size: 40px;
@@ -237,22 +229,32 @@
 
   .tab-body__item {
     width: 100%;
+    max-width: 340px;
+    max-width: 400px;
+    margin-top: 0;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 35px;
     min-height: 384px;
     padding-top: 44px;
     padding-right: 11.8%;
-    padding-bottom: 44px;
+    padding-bottom: 30px;
     padding-left: 11.8%;
-    margin-bottom: 35px;
+
+  }
+
+  .tab-body__item:nth-of-type(3n) {
+    margin-right: auto;
   }
 
   .tab-body__item h3 {
-    padding-bottom: 9px;
+    padding-bottom: 4.5%;
     font-size: 22px;
     line-height: 24px;
   }
 
   .tab-body__item p {
-    padding-bottom: 9px;
+    padding-bottom: 4.5%;
   }
 
   .tab-body__item strong {
@@ -271,7 +273,7 @@
 
   .tab-body__item .tab-body__item-price {
     margin-top: -83px;
-    margin-bottom: 20px;
+    margin-bottom: 10%;
   }
 
   .tab-body__item .tab-body__item-shadow {
@@ -280,7 +282,8 @@
   }
 
   .tab-body__item a {
-    @include button;
+    width: 207px;
+    margin: 0 auto;
     color: #102654;
     border: 2px solid #102654;
     padding-top: 24px;

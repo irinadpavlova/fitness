@@ -54,8 +54,7 @@
       prevEl: '.reviews__button-prev',
     },
     spaceBetween: 0,
-    slidesPerView: 'auto',
-    autoHeight: true
+    slidesPerView: 'auto'
   });
 })();
 
