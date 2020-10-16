@@ -109,6 +109,26 @@
     padding-right: 60px;
     padding-left: 173px;
   }
+
+  .reviews__swiper-slide p {
+    max-width: 611px;
+  }
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    .reviews .reviews__swiper-slide {
+      background: url("../img/reviews@1x.png") no-repeat 45px 61px;
+      background-size: 12% auto;
+      background-color: #1c3374;
+    }
+  }
+}
+
+@media (max-width: 850px) {
+  .reviews .reviews__swiper-slide {
+    background-image: url("../img/reviews@2x.png");
+    background-size: 14% auto;
+    background-color: #1c3374;
+  }
 }
 
 @media (max-width: $mobile-width) {

@@ -48,13 +48,13 @@
 
 (function () {
   var newSwiper = new Swiper('.reviews__swiper-container', {
-    loop: false,
     navigation: {
       nextEl: '.reviews__button-next',
       prevEl: '.reviews__button-prev',
     },
     spaceBetween: 0,
-    slidesPerView: 'auto'
+    slidesPerView: 1,
+    loop: 'auto'
   });
 })();
 

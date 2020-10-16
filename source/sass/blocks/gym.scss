@@ -10,8 +10,10 @@
   padding: 0 10px;
   margin: 0 auto;
   max-width: 1370px;
+  min-height: 1px;
   display: flex;
   flex-wrap: wrap;
+  flex-shrink: 0;
 }
 
 .gym__info {
@@ -50,6 +52,7 @@
 
 .gym__image {
   width: 100%;
+  min-height: 1px;
 }
 
 .gym__image img {
@@ -179,15 +182,6 @@
 
   .gym__more-info {
     display: none;
-  }
-
-  .gym__image {
-    width: 100%;
-  }
-
-  .gym__image img {
-    width: 100%;
-    height: auto;
   }
 
   .gym__video {
