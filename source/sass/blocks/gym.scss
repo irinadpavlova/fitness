@@ -52,7 +52,6 @@
 
 .gym__image {
   width: 100%;
-  min-height: 1px;
 }
 
 .gym__image img {
@@ -159,6 +158,12 @@
     max-height: none;
   }
 
+  .gym__image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+
   .gym__info {
     width: 100%;
     margin-right: 0;
@@ -223,6 +228,13 @@
   }
 }
 
+@media (max-width: 768px) {
+  .gym__image img {
+    height: 345px;
+    object-fit: cover;
+  }
+}
+
 @media (max-width: $mobile-width) {
   .gym {
     padding-top: 66px;
@@ -267,6 +279,10 @@
 
   .gym__image {
     margin-bottom: 40px;
+  }
+
+  .gym__image img {
+    height: 313px;
   }
 
   .gym__video {

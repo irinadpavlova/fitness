@@ -11,36 +11,6 @@
   <link rel="preload" href="fonts/roboto-condensed-bold.woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="fonts/roboto-condensed-light.woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="fonts/roboto-condensed-regular.woff2" as="font" crossorigin="anonymous">
-  <!-- Pixel Glass -->
-<style>
-HTML {
-  background-repeat: no-repeat;
-  background-position:  50% 0;
-  /* По умолчанию мобильный макет */
-  background-image: url( "pp/img/mobile.png" );
-}
-/* Планшет */
-@media ( min-width: 768px ) {
-  HTML {
-    /* Планшетный макет */
-    background-image: url( "pp/img/tablet.png" );
-  }
-}
-/* Десктоп */
-@media ( min-width: 1200px ) {
-  HTML {
-    /* Десктопный макет */
-    background-image: url( "pp/img/desktop.png" );
-  }
-}
-
-BODY {
-  opacity: .5;
-}
-</style>
-<link rel="stylesheet" href="pp/pp-style.css">
-<script src="pp/pp-script.js"></script>
-<!-- // Pixel Glass -->
 </head>
 <body>
   <div style="display: none">
@@ -102,7 +72,7 @@ BODY {
               <source type="image/webp" media="(max-width: 1199px)" srcset="img/gym-tablet@1x.webp, img/gym-tablet@2x.webp 2x">
               <source type="image/webp" media="(min-width: 1200px)" srcset="img/gym-desktop@1x.webp, img/gym-desktop@2x.webp 2x">
               <!-- 1х: 660px; 2x: 1320px -->
-              <img src="img/gym-desktop@1x.jpg" srcset="img/gym-desktop@2x.jpg 2x" width="660" height="401" alt="Большой светлый зал с велотренажерами, гантелями, дисками и другим спортивным оборудованием">
+              <img src="img/gym-desktop@1x.jpg" class="gym__image-poly image image--poly" srcset="img/gym-desktop@2x.jpg 2x" width="660" height="401" alt="Большой светлый зал с велотренажерами, гантелями, дисками и другим спортивным оборудованием">
             </picture>
           </div>
           <div class="gym__video">
@@ -436,7 +406,7 @@ BODY {
                 <source type="image/webp" media="(max-width: 1199px)" srcset="img/discount-tablet@1x.webp, img/discount-tablet@2x.webp 2x">
                 <source type="image/webp" media="(min-width: 1200px)" srcset="img/discount-desktop@1x.webp, img/discount-desktop@2x.webp 2x">
                 <!-- 1х: 660px; 2x: 1320px -->
-                <img src="img/discount-desktop@1x.jpg" srcset="img/discount-desktop@2x.jpg 2x" width="280" height="462" alt="Женщина, одетая в форму для фитнеса, улыбается на фоне голубого неба">
+                <img src="img/discount-desktop@1x.jpg" class="stock__image-poly image image--poly" srcset="img/discount-desktop@2x.jpg 2x" width="280" height="462" alt="Женщина, одетая в форму для фитнеса, улыбается на фоне голубого неба">
               </picture>
             </div>
           </li>

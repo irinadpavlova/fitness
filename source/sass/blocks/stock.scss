@@ -56,6 +56,7 @@
   margin: 0;
   font-size: 18px;
   line-height: 25px;
+  padding-bottom: 20px;
 }
 
 .stock a {
@@ -179,6 +180,11 @@
     width: 58.85%;
   }
 
+  .stock__img-wrapper img {
+    width: 100%;
+    height: 100%;
+  }
+
   .stock__secondary {
     width: 47.9%;
     padding-top: 20px;
@@ -192,6 +198,14 @@
       margin-right: 0;
       padding-right: 30px;
     }
+  }
+}
+
+@media (max-width: 768px) {
+  .stock__img-wrapper img {
+    height: 462px;
+    object-fit: cover;
+    object-position: center top;
   }
 }
 
@@ -240,6 +254,10 @@
 
   .stock__img-wrapper {
     width: 100%;
+  }
+
+  .stock__img-wrapper img {
+    height: auto;
   }
 
   .stock__secondary {
